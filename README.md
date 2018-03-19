@@ -1,4 +1,4 @@
-#Baryon
+# Baryon
 ## A starter WordPress theme and build tool
 ___
 
