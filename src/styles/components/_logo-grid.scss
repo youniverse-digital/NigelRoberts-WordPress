@@ -1,0 +1,28 @@
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: 1fr;
+    margin-top: 70px;
+
+    @include medium {
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .logo-grid-item {
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 34px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+
+        padding: 17px 15px;
+        border: 4px solid $border;
+        
+        img {
+            max-width: 100%;
+        }
+
+    }
+}

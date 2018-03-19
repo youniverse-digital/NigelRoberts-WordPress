@@ -1,0 +1,54 @@
+body {
+    font-family: $tisa;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.4em;
+
+    @include medium {
+        font-size: 19px;
+    }
+
+    @include large {
+        font-size: 1.2em;
+        
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $proxima-nova;
+    font-weight: normal;
+    color: $main-red;
+}
+
+h1 {
+    font-size: 40px;
+
+    @include medium {
+        font-size: 49px;
+    }
+
+    @include large {
+        font-size: 66px;
+    }
+}
+
+h2 {
+    font-size: 36px;
+
+    @include large {
+        font-size: 48px;
+    }
+}
+
+h3 {
+    font-size: 27px;
+}

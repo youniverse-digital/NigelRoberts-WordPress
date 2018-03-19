@@ -1,0 +1,23 @@
+footer {
+   border-top: 13px solid $border-footer;
+   padding: 50px 0;
+   background-color: $bg-footer;
+   text-align: center;
+
+   p {
+       color: $text-accent;
+       font-size: 24px;
+
+       @include medium {
+           font-size: 28px;
+       }
+
+       @include large {
+           font-size: 32px;
+       }
+   }
+
+   img {
+       max-width: 100%;
+   }
+}

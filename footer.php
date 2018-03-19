@@ -9,26 +9,30 @@
  * @package Baryon
  */
 
+ $site_logo_footer = get_field('site_logo_footer', 'options');
+
 ?>
 
-	</div><!-- #content -->
+	<footer id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col col-12">
+					<img src="<?php echo $site_logo_footer ?>" alt="" class="footer-logo">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-12">
+					<p class="address">
+						8 Houghton Close, Asfordby Hill, Melton Mowbray. LE14 3QL
+						<br><br>
+						t: 01664 812765<br>
+						m: 07973860996
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'baryon' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'baryon' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'baryon' ), 'baryon', '<a href="http://youniverse.co.uk">Daniel Wildman</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

@@ -1,0 +1,21 @@
+.testimonial {
+    text-align: center;
+    
+    p {
+        font-style: italic;
+        font-size: 21px;
+
+        @include medium {
+            font-size: 25px;
+        }
+
+        @include large {
+            font-size: 27px;
+        }
+    }
+
+    .testimonial-author {
+        padding-top: 35px;
+        margin-bottom: 0;
+    }
+}

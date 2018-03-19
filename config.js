@@ -1,6 +1,6 @@
 module.exports = {
-    projectName: 'baryon',
-    projectDevURL: 'dev.baryon.io',
+    projectName: 'nigel-roberts',
+    projectDevURL: 'dev.nigelrobertsltd.co.uk',
     buildDir: './build/',
     buildInc: [
         '**/*.php',

@@ -2,11 +2,11 @@
 @import 'base/_manifest.scss';
 @import 'base/_wp.scss';
 
-//Vendor
-
 //Abstracts
 @import 'abstracts/_variables';
 @import 'abstracts/_mixins';
+
+//Vendors
 
 //Base
 @import 'base/_reset';
@@ -14,7 +14,23 @@
 @import 'base/_typography';
 
 //Components
+@import 'components/_dotrule';
+@import 'components/_button';
+@import 'components/_logo-grid';
+@import 'components/_testimonial';
+@import 'components/_image-grid';
+@import 'components/_work-grid';
+@import 'components/_fullwidth-images';
 
 //Layout
+@import 'layout/_grid';
+@import 'layout/_section';
+@import 'layout/_navigation';
+@import 'layout/_header';
+@import 'layout/_lead';
+@import 'layout/_clients';
+@import 'layout/_footer';
+@import 'layout/_lr-content';
 
 //Pages
+@import 'pages/_home';

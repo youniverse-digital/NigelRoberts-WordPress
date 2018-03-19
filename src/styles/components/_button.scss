@@ -1,0 +1,20 @@
+.button {
+    background-color: $main-red;
+    color: white;
+    font-family: $tisa;
+    font-size: 20px;
+    border: 5px solid $bg-pale-dark;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    @include large {
+        font-size: 28px;
+    }
+
+    &.full-width {
+        width: 100%;
+        display: block;
+    }
+}

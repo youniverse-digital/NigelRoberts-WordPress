@@ -161,3 +161,32 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Site General Settings',
+		'menu_title'	=> 'Site Options',
+		'menu_slug' 	=> 'site-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+}
+
+function add_work_post_type() {
+	register_post_type( 'work', array(
+		'name' => "Work",
+		'singular_name' => "Work",
+		'menu_name' => "Work",
+		'public' => true,
+		'label' => "Work",
+		'supports' => array( 'thumbnail', 'title', 'editor' )
+	) );
+}
+
+add_action('init', 'add_work_post_type');
+
+
+
+
+

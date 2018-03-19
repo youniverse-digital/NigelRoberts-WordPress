@@ -1,0 +1,31 @@
+section {
+    border-top: 15px solid $bg-pale-dark;
+    background-color: white;
+    padding: 45px 0;
+    margin-top: -2px;
+
+    @include large {
+        padding: 90px 0;
+    }
+
+    &.section-bg {
+        background-color: $bg-pale;
+    }
+
+    &.no-border {
+        border-top: none;
+    }
+
+    .heading {
+        text-align: center;
+        
+        h1,
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .content-centre {
+        text-align: center;
+    }
+}

@@ -1,0 +1,11 @@
+.dot-rule {
+    color: $text-dark;
+    font-size: 25px;
+
+    margin: 30px 0;
+    margin-bottom: 50px;
+
+    &.p-bottom-small {
+        margin-bottom: 30px;
+    }
+}
